@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+.con_v{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tran{
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    .con_v{
+        width: 992px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .con_v{
+        width: 768px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .con_v{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .con_v{
+        width: 96vw;
+    }
+}
