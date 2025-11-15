@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
     <section className="w-full bg-white">
+      <div className="w-full h-[40vh] relative mb-10">
+        <img
+          src="https://source.hongfa.com//Uploads/Product/Factory/Factory_d36589f3-c87f-40e3-8b2e-f549133e06e7.jpg"
+          className="w-full h-full object-cover brightness-50 absolute top-0"
+          alt=""
+        />
+      </div>
       <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           <div className="w-full lg:w-1/2">
@@ -34,9 +41,14 @@ function About() {
                 HONGFA dunyo bo‘ylab 30 dan ortiq filialga ega
               </p>
               <p className="text-gray-700">
-                Biznesimiz 120 dan ortiq mamlakat va hududni qamrab oladi, jumladan: releylar, o‘rta va past kuchlanishli elektr jihozlari,
-                yuqori va past kuchlanishli to‘liq uskunalar, ulagichlar, kondensatorlar, aniqlik qismlari va avtomatlashtirish uskunalari. HONGFA Xitoyda (Xiamen-Zhangzhou, Sharqiy va G‘arbiy) 3 ta ilmiy-tadqiqot va ishlab chiqarish bazasini hamda Indoneziyada zavod tashkil etgan.
-                Bu to‘liq sanoat zanjiri va keng mahsulot assortimentini yaratish imkonini berdi.
+                Biznesimiz 120 dan ortiq mamlakat va hududni qamrab oladi,
+                jumladan: releylar, o‘rta va past kuchlanishli elektr jihozlari,
+                yuqori va past kuchlanishli to‘liq uskunalar, ulagichlar,
+                kondensatorlar, aniqlik qismlari va avtomatlashtirish
+                uskunalari. HONGFA Xitoyda (Xiamen-Zhangzhou, Sharqiy va
+                G‘arbiy) 3 ta ilmiy-tadqiqot va ishlab chiqarish bazasini hamda
+                Indoneziyada zavod tashkil etgan. Bu to‘liq sanoat zanjiri va
+                keng mahsulot assortimentini yaratish imkonini berdi.
               </p>
             </div>
 
@@ -45,8 +57,9 @@ function About() {
                 Korporativ missiya
               </h3>
               <p className="text-gray-700">
-                HONGFA mijozlarga qoniqarli mahsulotlar va yechimlar taqdim etishga, uzluksiz innovatsiyalar va yuqori sifatga intilish orqali
-                insonlar hayotini yanada qulay va oson qilishga sodiqdir.
+                HONGFA mijozlarga qoniqarli mahsulotlar va yechimlar taqdim
+                etishga, uzluksiz innovatsiyalar va yuqori sifatga intilish
+                orqali insonlar hayotini yanada qulay va oson qilishga sodiqdir.
               </p>
             </div>
           </div>
@@ -54,52 +67,60 @@ function About() {
       </div>
       <div className="flex my-18 flex-wrap justify-center gap-8">
         <div className="w-[400px] max-w-[94vw] flex items-center min-h-[250px] sm:border-r-2 border-gray-400">
-          <img src="about1.png" className='w-[200px]' />
+          <img src="about1.png" className="w-[200px]" />
           <div>
-            <h1 className='font-bold text-4xl sm:text-7xl'>35+</h1>
-            <p className='font-semibold'>Yillik Relay R&D ishlab chiqarish tajribasi</p>
+            <h1 className="font-bold text-4xl sm:text-7xl">35+</h1>
+            <p className="font-semibold">
+              Yillik Relay R&D ishlab chiqarish tajribasi
+            </p>
           </div>
         </div>
         <div className="w-[400px] max-w-[94vw] flex items-center min-h-[250px] sm:border-r-2 border-gray-400">
-          <img src="about2.png" className='w-[200px]' />
+          <img src="about2.png" className="w-[200px]" />
           <div>
-            <h1 className='font-bold text-4xl sm:text-7xl'>30+</h1>
-            <p className='font-semibold'>Qoshimcha korxonalar</p>
+            <h1 className="font-bold text-4xl sm:text-7xl">30+</h1>
+            <p className="font-semibold">Qoshimcha korxonalar</p>
           </div>
         </div>
         <div className="w-[400px] max-w-[94vw] flex items-center min-h-[250px]">
-          <img src="about3.png" className='w-[200px]' />
+          <img src="about3.png" className="w-[200px]" />
           <div>
-            <h1 className='font-bold text-4xl sm:text-7xl'>250+</h1>
-            <p className='font-semibold'>Avtomatik ishlab chiqarish liniyalari</p>
+            <h1 className="font-bold text-4xl sm:text-7xl">250+</h1>
+            <p className="font-semibold">
+              Avtomatik ishlab chiqarish liniyalari
+            </p>
           </div>
         </div>
       </div>
       <div className="flex bg-gray-200 py-5 pt-24 flex-wrap justify-center gap-8 mb-18">
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
-          <span className='text-xl font-bold text-blue-500 block'>01</span>
-          <div className='w-full flex justify-center'>
+          <span className="text-xl font-bold text-blue-500 block">01</span>
+          <div className="w-full flex justify-center">
             <i class="fa-solid fa-book block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
-          <h1 className='text-center text-2xl my-4 mb-8 font-bold'>HONGFAga kirish</h1>
+          <h1 className="text-center text-2xl my-4 mb-8 font-bold">
+            HONGFAga kirish
+          </h1>
         </div>
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
-          <span className='text-xl font-bold text-blue-500 block'>02</span>
-          <div className='w-full flex justify-center'>
+          <span className="text-xl font-bold text-blue-500 block">02</span>
+          <div className="w-full flex justify-center">
             <i class="fa-solid fa-people-group block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
-          <h1 className='text-center text-2xl my-4 mb-8 font-bold'>Karyera</h1>
+          <h1 className="text-center text-2xl my-4 mb-8 font-bold">Karyera</h1>
         </div>
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
-          <span className='text-xl font-bold text-blue-500 block'>03</span>
-          <div className='w-full flex justify-center'>
+          <span className="text-xl font-bold text-blue-500 block">03</span>
+          <div className="w-full flex justify-center">
             <i class="fa-solid fa-handshake-angle block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
-          <h1 className='text-center text-2xl my-4 mb-8 font-bold'>Qollab quvvatlash</h1>
+          <h1 className="text-center text-2xl my-4 mb-8 font-bold">
+            Qollab quvvatlash
+          </h1>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
