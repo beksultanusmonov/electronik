@@ -1,5 +1,6 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function MainLayout() {
   return (
@@ -53,37 +54,36 @@ function MainLayout() {
         <div className="flex justify-center md:justify-between con_v h-full items-center">
           <img src="logo.png" />
           <div className="hidden md:flex gap-3 h-full items-center">
-            <a
-              href="#"
+            <Link to={'/'}
               className="h-20 w-20 flex justify-center items-center bg-blue-400"
             >
               <i className="fa-solid fa-home text-3xl text-white"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'/products'}>
               <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
                 Mahsulotlar
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'/news'}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Yangiliklar
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'/services'}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Xizmatlar
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'/about'}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Biz haqimizda
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to={'/contact'}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Aloqa
               </span>
-            </a>
+            </Link>
           </div>
           <div className="w-[90vw] sm:w-[80vw] md:hidden h-[70px] bg-blue-700 absolute top-20 flex items-center justify-between px-3 gap-1">
             <a
@@ -98,31 +98,36 @@ function MainLayout() {
                   </form>
                   <img src="logo.png" className="mt-9 mx-auto" />
                   <nav className="flex flex-col mt-10">
-                    <a href="#" className="border-b border-gray-600 h-10 pl-5">
+                    <Link to={'/'} className="border-b border-gray-600 h-10 pl-5">
+                      <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
+                        Bosh sahifa
+                      </span>
+                    </Link>
+                    <Link to={'/products'} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Mahsulotlar
                       </span>
-                    </a>
-                    <a href="#" className="border-b border-gray-600 h-10 pl-5">
+                    </Link>
+                    <Link to={'/news'} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Yangiliklar
                       </span>
-                    </a>
-                    <a href="#" className="border-b border-gray-600 h-10 pl-5">
+                    </Link>
+                    <Link to={'/services'} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Xizmatlar
                       </span>
-                    </a>
-                    <a href="#" className="border-b border-gray-600 h-10 pl-5">
+                    </Link>
+                    <Link to={'/about'} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Biz haqimizda
                       </span>
-                    </a>
-                    <a href="#" className="border-b border-gray-600 h-10 pl-5">
+                    </Link>
+                    <Link to={'/contact'} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Aloqa
                       </span>
-                    </a>
+                    </Link>
                   </nav>
                   <div className="flex gap-3 mt-10 justify-center">
                     <a
@@ -186,6 +191,7 @@ function MainLayout() {
         </div>
       </nav>
       <Outlet />
+      <Footer />
     </div>
   );
 }
