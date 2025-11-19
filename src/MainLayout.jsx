@@ -65,9 +65,9 @@ function MainLayout() {
       </header>
       
       <nav className="h-24 sticky top-0 bg-base-100 z-100 transition-all duration-300">
-        <div className="flex justify-center md:justify-between con_v h-full items-center">
-          
-          <img src="logo.png" />
+        <div className="flex justify-center md:justify-between con_v h-full items-center">          
+          {/* <img src="logo.png" /> */}
+          <h1 className="text-blue-700 font-bold text-4xl">NMD</h1>
           <div className="hidden md:flex gap-3 h-full items-center">
             <Link to={"/"} className="h-20 w-20 flex justify-center items-center bg-blue-400">
               <i className="fa-solid fa-home text-3xl text-white"></i>
@@ -114,7 +114,8 @@ function MainLayout() {
                   >
                     <button className="fa-solid fa-xmark" id="back_btn"></button>
                   </form>
-                  <img src="logo.png" className="mt-9 mx-auto" />
+                  {/* <img src="logo.png" className="mt-9 mx-auto" /> */}
+                  <h1 className="text-blue-700 font-bold text-4xl mt-9 mx-auto pl-8">NMD</h1>
                   <nav className="flex flex-col mt-10">
                     <Link to={"/"} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">

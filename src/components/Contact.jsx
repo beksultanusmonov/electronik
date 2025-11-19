@@ -11,15 +11,9 @@ function Contact() {
           <h1 className="font-bold text-xl text-blue-400">
             {t('contact_title')}
           </h1>
-          <div>
-            <i className="fa-solid fa-address-book"></i>
-            <span>
-              {t('contact_address')}
-            </span>
-          </div>
           <div className="my-4">
             <i className="fa-solid fa-envelope"></i>
-            <span className="text-blue-400">marketing@hongfa.com</span>
+            <span className="text-blue-400">orginfo.uz</span>
           </div>
           <div>
             <i className="fa-solid fa-phone"></i>
@@ -35,15 +29,9 @@ function Contact() {
           <h1 className="font-bold text-xl text-blue-400">
             {t('contact_title')}
           </h1>
-          <div>
-            <i className="fa-solid fa-address-book"></i>
-            <span>
-              {t('contact_address')}
-            </span>
-          </div>
           <div className="my-4">
             <i className="fa-solid fa-envelope"></i>
-            <span className="text-blue-400">marketing@hongfa.com</span>
+            <span className="text-blue-400">orginfo.uz</span>
           </div>
           <div>
             <i className="fa-solid fa-phone"></i>
