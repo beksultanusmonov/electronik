@@ -15,22 +15,6 @@ const products = [
   { title: "Boshqalar", image: "post11.png" },
 ];
 
-const newsItems = [
-  {
-    date: "11 Sen",
-    title: "Hongfa 2025 yil oraliq hisobotidan asosiy xulosalar",
-  },
-  {
-    date: "27 Avg",
-    title:
-      "21 ta Yevropa davlatidan diplomatlar Hongfa kompaniyasiga tashrif buyurdi",
-  },
-  {
-    date: "10 Iyul",
-    title:
-      "Hongfa avtomobil relelari uchun milliy standart ishlab chiqishda yetakchilik qildi",
-  },
-];
 
 function Home() {
   const [slide, setSlide] = useState(1);
@@ -152,12 +136,16 @@ function Home() {
           return (
             <div
               key={data.title}
-              className="w-[300px] h-[350px] p-3 flex flex-col justify-evenly gap-3 text-center border-b border-blue-500 hover:bg-blue-800 shadow-md rounded tran group"
+              className="w-[300px] h-[350px] p-3 flex flex-col justify-evenly gap-3 text-center border-b shadow-md rounded tran group relative"
             >
-              <img src={data.image} className="w-[90%] mx-auto" />
-              <h2 className="text-xl font-bold group-hover:text-white">
+              <img src={data.image} className="w-[90%] mx-auto z-30" />
+              <h2 className="text-xl font-bold group-hover:text-white z-30">
                 {data.title}
               </h2>
+              <div className="absolute w-0 group-hover:w-full h-full z-10 right-[50%] group-hover:right-0 transition-all duration-700 bg-blue-700"></div>
+              <div className="absolute w-12 z-20 h-0 group-hover:h-12 tran shadow-md bg-white flex items-center justify-center -bottom-5 right-[45%] cursor-pointer hover:bg-cyan-400">
+                <i className="fa-solid fa-plus invisible group-hover:visible hover:text-white text-3xl font-bold"></i>
+              </div>
             </div>
           );
         })}

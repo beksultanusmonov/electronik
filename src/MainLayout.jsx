@@ -14,7 +14,6 @@ function MainLayout() {
             <option>O'zbek tili</option>
             <option>Rus tili</option>
             <option>Ingliz tili</option>
-            <option>Turk tili</option>
           </select>
           <div className="flex gap-3">
             <a
@@ -54,32 +53,33 @@ function MainLayout() {
         <div className="flex justify-center md:justify-between con_v h-full items-center">
           <img src="logo.png" />
           <div className="hidden md:flex gap-3 h-full items-center">
-            <Link to={'/'}
+            <Link
+              to={"/"}
               className="h-20 w-20 flex justify-center items-center bg-blue-400"
             >
               <i className="fa-solid fa-home text-3xl text-white"></i>
             </Link>
-            <Link to={'/products'}>
+            <Link to={"/products"}>
               <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
                 Mahsulotlar
               </span>
             </Link>
-            <Link to={'/news'}>
+            <Link to={"/news"}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Yangiliklar
               </span>
             </Link>
-            <Link to={'/services'}>
+            <Link to={"/services"}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Xizmatlar
               </span>
             </Link>
-            <Link to={'/about'}>
+            <Link to={"/about"}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Biz haqimizda
               </span>
             </Link>
-            <Link to={'/contact'}>
+            <Link to={"/contact"}>
               <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                 Aloqa
               </span>
@@ -93,37 +93,58 @@ function MainLayout() {
             >
               <dialog id="my_modal_2" className="modal ">
                 <div className="w-[300px] max-w-[100vw] absolute h-screen bg-black right-0">
-                  <form method="dialog" className="bg-white rounded-full absolute top-2 right-2 w-8 h-8 flex items-center justify-center text-black">
+                  <form
+                    method="dialog"
+                    className="bg-white rounded-full absolute top-2 right-2 w-8 h-8 flex items-center justify-center text-black"
+                  >
                     <button className="fa-solid fa-xmark"></button>
                   </form>
                   <img src="logo.png" className="mt-9 mx-auto" />
                   <nav className="flex flex-col mt-10">
-                    <Link to={'/'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Bosh sahifa
                       </span>
                     </Link>
-                    <Link to={'/products'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/products"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Mahsulotlar
                       </span>
                     </Link>
-                    <Link to={'/news'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/news"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Yangiliklar
                       </span>
                     </Link>
-                    <Link to={'/services'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/services"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Xizmatlar
                       </span>
                     </Link>
-                    <Link to={'/about'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/about"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Biz haqimizda
                       </span>
                     </Link>
-                    <Link to={'/contact'} className="border-b border-gray-600 h-10 pl-5">
+                    <Link
+                      to={"/contact"}
+                      className="border-b border-gray-600 h-10 pl-5"
+                    >
                       <span className="text-lg font-semibold  transition-all duration-300 hover:text-blue-400">
                         Aloqa
                       </span>
@@ -161,6 +182,14 @@ function MainLayout() {
                       <i className="fa-brands fa-youtube"></i>
                     </a>
                   </div>
+                  <select className="select my-6 text-black w-[90%] ml-[5%]">
+                    <option disabled={true}>
+                      <i className="fa-solid fa-globe"></i> Tilni tanlang
+                    </option>
+                    <option>O'zbek tili</option>
+                    <option>Rus tili</option>
+                    <option>Ingliz tili</option>
+                  </select>
                 </div>
                 <form method="dialog" className="modal-backdrop">
                   <button>close</button>
