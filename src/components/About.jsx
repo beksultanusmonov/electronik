@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full bg-white">
       <div className="w-full h-[40vh] relative mb-10">
@@ -24,42 +27,33 @@ function About() {
 
           <div className="w-full lg:w-1/2">
             <h2 className="font-semibold text-xl text-blue-500">
-              Xiamen Hongfa Electroacoustic Co., Ltd. (HONGFA) haqida
+              {t('about_title')}
             </h2>
 
             <div className="space-y-2 mb-6">
               <p className="text-gray-800 md:text-4xl font-medium">
-                HONGFA 1984-yilda tashkil etilgan
+                {t('about_founded')}
               </p>
               <p className="text-gray-700">
-                Bugungi kunda HONGFA global reley sanoatida yetakchiga aylangan.
+                {t('about_global_leader')}
               </p>
             </div>
 
             <div className="space-y-3 mb-6">
               <p className="text-gray-800 font-medium md:text-2xl">
-                HONGFA dunyo bo‘ylab 30 dan ortiq filialga ega
+                {t('about_branches_count')}
               </p>
               <p className="text-gray-700">
-                Biznesimiz 120 dan ortiq mamlakat va hududni qamrab oladi,
-                jumladan: releylar, o‘rta va past kuchlanishli elektr jihozlari,
-                yuqori va past kuchlanishli to‘liq uskunalar, ulagichlar,
-                kondensatorlar, aniqlik qismlari va avtomatlashtirish
-                uskunalari. HONGFA Xitoyda (Xiamen-Zhangzhou, Sharqiy va
-                G‘arbiy) 3 ta ilmiy-tadqiqot va ishlab chiqarish bazasini hamda
-                Indoneziyada zavod tashkil etgan. Bu to‘liq sanoat zanjiri va
-                keng mahsulot assortimentini yaratish imkonini berdi.
+                {t('about_business_scope')}
               </p>
             </div>
 
             <div className="border-t border-gray-200 pt-4">
               <h3 className="text-lg font-semibold text-gray-900 mb-2 md:text-2xl">
-                Korporativ missiya
+                {t('about_mission_title')}
               </h3>
               <p className="text-gray-700">
-                HONGFA mijozlarga qoniqarli mahsulotlar va yechimlar taqdim
-                etishga, uzluksiz innovatsiyalar va yuqori sifatga intilish
-                orqali insonlar hayotini yanada qulay va oson qilishga sodiqdir.
+                {t('about_mission_text')}
               </p>
             </div>
           </div>
@@ -71,7 +65,7 @@ function About() {
           <div>
             <h1 className="font-bold text-4xl sm:text-7xl">35+</h1>
             <p className="font-semibold">
-              Yillik Relay R&D ishlab chiqarish tajribasi
+              {t('stat_relay_exp')}
             </p>
           </div>
         </div>
@@ -79,7 +73,7 @@ function About() {
           <img src="about2.png" className="w-[200px]" />
           <div>
             <h1 className="font-bold text-4xl sm:text-7xl">30+</h1>
-            <p className="font-semibold">Qoshimcha korxonalar</p>
+            <p className="font-semibold">{t('stat_branches')}</p>
           </div>
         </div>
         <div className="w-[400px] max-w-[94vw] flex items-center min-h-[250px]">
@@ -87,7 +81,7 @@ function About() {
           <div>
             <h1 className="font-bold text-4xl sm:text-7xl">250+</h1>
             <p className="font-semibold">
-              Avtomatik ishlab chiqarish liniyalari
+              {t('stat_lines')}
             </p>
           </div>
         </div>
@@ -99,7 +93,7 @@ function About() {
             <i class="fa-solid fa-book block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
           <h1 className="text-center text-2xl my-4 mb-8 font-bold">
-            HONGFAga kirish
+            {t('card_hongfa_intro')}
           </h1>
         </div>
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
@@ -107,7 +101,7 @@ function About() {
           <div className="w-full flex justify-center">
             <i class="fa-solid fa-people-group block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
-          <h1 className="text-center text-2xl my-4 mb-8 font-bold">Karyera</h1>
+          <h1 className="text-center text-2xl my-4 mb-8 font-bold">{t('card_career')}</h1>
         </div>
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
           <span className="text-xl font-bold text-blue-500 block">03</span>
@@ -115,7 +109,7 @@ function About() {
             <i class="fa-solid fa-handshake-angle block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
           <h1 className="text-center text-2xl my-4 mb-8 font-bold">
-            Qollab quvvatlash
+            {t('card_support')}
           </h1>
         </div>
       </div>

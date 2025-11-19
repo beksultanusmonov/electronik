@@ -1,20 +1,23 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const products = [
-  { title: "Quvvat o'rni", img: "product1.png" },
-  { title: "Avtomobil releyi", img: "product2.png" },
-  { title: "Yuqori kuchlanishli shahar o'rni", img: "product3.png" },
-  { title: "Gulfattan releyi", img: "product4.png" },
-  { title: "Signal o'rni", img: "product5.png" },
-  { title: "Yuqori chastotali rele", img: "product6.png" },
-  { title: "Reed reley", img: "product7.png" },
-  { title: "Sanoat releyi", img: "product8.png" },
-  { title: "Qattiq holat relesi", img: "product9.png" },
-  { title: "Rele rozetkasi", img: "products10.png" },
-  { title: "Rele moduli", img: "products11.png" },
+  { titleKey: "products_power_relay", img: "product1.png" },
+  { titleKey: "products_auto_relay", img: "product2.png" },
+  { titleKey: "products_hv_dc_relay", img: "product3.png" },
+  { titleKey: "products_latching_relay", img: "product4.png" },
+  { titleKey: "products_signal_relay", img: "product5.png" },
+  { titleKey: "products_hf_relay", img: "product6.png" },
+  { titleKey: "products_reed_relay", img: "product7.png" },
+  { titleKey: "products_industrial_relay", img: "product8.png" },
+  { titleKey: "products_ssr", img: "product9.png" },
+  { titleKey: "products_relay_socket", img: "products10.png" },
+  { titleKey: "products_relay_module", img: "products11.png" },
 ];
 
 function Products() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="w-full h-[40vh] relative">
@@ -29,26 +32,19 @@ function Products() {
         <div className="flex items-center gap-3">
           <hr className="h-0.5 w-10 bg-gray-700"></hr>
           <span className="font-semibold text-xl">
-            Mahsulot toifasiga umumiy nuqtai
+            {t('products_category_overview')}
           </span>
         </div>
-        <h1 className="text-4xl font-bold">Relelar</h1>
+        <h1 className="text-4xl font-bold">{t('product_relays')}</h1>
         <p className="my-10">
-          Hongfa o'rni mahsulotlariga quvvat o'rni (umumiy maqsadli o'rni),
-          avtomobil o'rni, yuqori kuchlanishli shahar o'rni (DC kontaktorlari),
-          qulflash o'rni, signal o'rni, sanoat o'rni va boshqalar kiradi.
-          Shuningdek, biz mos keladigan o'rni rozetkalarini taqdim etamiz.
-          Hongfa o'rni 160 dan ortiq seriyali, 40 000 dan ortiq umumiy
-          xususiyatlarni o'z ichiga oladi, yillik ishlab chiqarish quvvati 3
-          milliard donadan ortiq bo'lib, mahsulotlar UL / C-UL, VDE, TÜV, CQC va
-          boshqa xavfsizlik sertifikatlari bilan sertifikatlangan.
+          {t('products_relays_desc')}
         </p>
-        <h1 className="text-2xl font-bold">Tegishli mahsulotlar</h1>
+        <h1 className="text-2xl font-bold">{t('products_related_products')}</h1>
         <div className="w-full flex flex-wrap gap-x-10 gap-y-20 justify-center">
           {products.map((data) => {
             return (
               <div
-                key={data.title}
+                key={data.titleKey}
                 className="w-[420px] py-5 px-2 relative border border-blue-800 group z-10"
               >
                 <img
@@ -60,7 +56,7 @@ function Products() {
                     <i class="fa-solid fa-car-battery text-white text-3xl"></i>
                   </div>
                   <div className="w-[80%] h-full bg-white flex items-center pl-5 font-semibold text-xl">
-                    <h2>{data.title}</h2>
+                    <h2>{t(data.titleKey)}</h2>
                   </div>
                 </div>
               </div>

@@ -1,15 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[#0B1B3B] text-white py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* 1️⃣ Korporativ info */}
         <div className="space-y-3">
           <h1 className="text-2xl font-bold flex items-center gap-2">
             <span className="text-red-600 font-extrabold">HF</span> HONGFA
           </h1>
-          <p className="text-sm text-gray-300">Korporativ shtab-kvartirasi</p>
+          <p className="text-sm text-gray-300">{t('footer_corp_hq')}</p>
           <p className="font-semibold">
             Xiamen Hongfa Electroacoustic Co., Ltd.
           </p>
@@ -22,35 +24,32 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* 2️⃣ Mahsulot va xizmatlar */}
         <div>
-          <h2 className="font-semibold mb-3">Mahsulot Va Xizmatlar</h2>
+          <h2 className="font-semibold mb-3">{t('footer_products_services')}</h2>
           <ul className="space-y-1 text-gray-300 text-sm">
-            <li>Mahsulot tanlovchilari</li>
-            <li>Resurslar yuklab olish</li>
-            <li>Mahsulotni to'xtatish va almashtirish</li>
-            <li>Mahsulotning muvofiqligi</li>
-            <li>Yechimlar</li>
-            <li>Mahsulot bilan bog'liq standartlar</li>
+            <li>{t('footer_selector')}</li>
+            <li>{t('footer_download')}</li>
+            <li>{t('footer_discontinuation')}</li>
+            <li>{t('footer_compliance')}</li>
+            <li>{t('footer_solutions')}</li>
+            <li>{t('footer_standards')}</li>
           </ul>
         </div>
 
-        {/* 3️⃣ HONGFA haqida */}
         <div>
-          <h2 className="font-semibold mb-3">HONGFA Haqida</h2>
+          <h2 className="font-semibold mb-3">{t('footer_about_us')}</h2>
           <ul className="space-y-1 text-gray-300 text-sm">
-            <li>HONGFAga kirish</li>
-            <li>Karyera</li>
-            <li>Ishlab chiqarish bazasi</li>
-            <li>Sayt xaritasi</li>
-            <li>Marketing tarmog'i</li>
-            <li>Maxfiylik bayonoti</li>
+            <li>{t('card_hongfa_intro')}</li>
+            <li>{t('card_career')}</li>
+            <li>{t('footer_production_base')}</li>
+            <li>{t('footer_sitemap')}</li>
+            <li>{t('footer_marketing_network')}</li>
+            <li>{t('footer_privacy_statement')}</li>
           </ul>
         </div>
 
-        {/* 4️⃣ Bizning fabrikalarimiz */}
         <div>
-          <h2 className="font-semibold mb-3">Bizning Fabrikalarimiz</h2>
+          <h2 className="font-semibold mb-3">{t('footer_our_factories')}</h2>
           <div className="grid grid-cols-3 gap-2">
             {Array.from({ length: 9 }).map((_, i) => (
               <div key={i} className="w-full h-16 bg-gray-500 rounded-md"></div>
@@ -59,13 +58,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Footer past qismi */}
       <div className="mt-10 border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-4">
-        <p>© 2025 HONGFA tomonidan Barcha huquqlar himoyalangan.</p>
+        <p>{t('footer_copyright')}</p>
         <div className="flex gap-4">
-          <a href="#">Maxfiylik siyosati</a>
+          <a href="#">{t('footer_privacy_statement')}</a>
           <span>|</span>
-          <a href="#">Sayt xaritasi</a>
+          <a href="#">{t('footer_sitemap')}</a>
         </div>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a

@@ -1,17 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="flex flex-wrap justify-center my-20 gap-5">
         <div className="bg-gray-100 p-4 w-[500px] max-w-[96vw] shadow-xl">
           <h1 className="font-bold text-xl text-blue-400">
-            Xiamen Hongfa Electroacoustic Co., Ltd.
+            {t('contact_title')}
           </h1>
           <div>
             <i className="fa-solid fa-address-book"></i>
             <span>
-              560 Donglin Rd, Jimei tumani, Xiamen, Fujian, Xitoy, 361021
+              {t('contact_address')}
             </span>
           </div>
           <div className="my-4">
@@ -30,12 +33,12 @@ function Contact() {
         </div>
         <div className="bg-gray-100 p-4 w-[500px] max-w-[96vw] shadow-xl">
           <h1 className="font-bold text-xl text-blue-400">
-            Xiamen Hongfa Electroacoustic Co., Ltd.
+            {t('contact_title')}
           </h1>
           <div>
             <i className="fa-solid fa-address-book"></i>
             <span>
-              560 Donglin Rd, Jimei tumani, Xiamen, Fujian, Xitoy, 361021
+              {t('contact_address')}
             </span>
           </div>
           <div className="my-4">
