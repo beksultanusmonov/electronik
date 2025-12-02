@@ -23,7 +23,7 @@ function MainLayout() {
             className="select"
           >
             <option disabled={true} value="">
-              <i className="fa-solid fa-globe"></i> {t('nav_select_lang')}
+              {t('nav_select_lang')}
             </option>
             <option value="uz">{t('lang_uz')}</option> 
             <option value="ru">{t('lang_ru')}</option>
@@ -67,7 +67,7 @@ function MainLayout() {
       <nav className="h-24 sticky top-0 bg-base-100 z-100 transition-all duration-300">
         <div className="flex justify-center md:justify-between con_v h-full items-center">          
           {/* <img src="logo.png" /> */}
-          <h1 className="text-blue-700 font-bold text-4xl">NMD</h1>
+          <h1 className="text-blue-700 font-bold text-2xl md:text-4xl">NEW MATERIALS DEVISION</h1>
           <div className="hidden md:flex gap-3 h-full items-center">
             <Link to={"/"} className="h-20 w-20 flex justify-center items-center bg-blue-400">
               <i className="fa-solid fa-home text-3xl text-white"></i>
@@ -90,8 +90,7 @@ function MainLayout() {
           </div>
           
           <div className="w-[90vw] sm:w-[80vw] md:hidden h-[70px] bg-blue-700 absolute top-20 flex items-center justify-between px-3 gap-1">
-            <a
-              href="#"
+            <div
               className="text-white bg-blue-400 h-10 w-14 flex justify-center items-center"
               onClick={() => document.getElementById("my_modal_2").showModal()}
             >
@@ -166,7 +165,7 @@ function MainLayout() {
                     className="select my-6 text-black w-[90%] ml-[5%]"
                   >
                     <option disabled={true} value="">
-                       <i className="fa-solid fa-globe"></i> {t('nav_select_lang')}
+                      {t('nav_select_lang')}
                     </option>
                     <option value="uz">{t('lang_uz')}</option>
                     <option value="ru">{t('lang_ru')}</option>
@@ -178,7 +177,7 @@ function MainLayout() {
                 </form>
               </dialog>
               <i className="fa-solid fa-bars text-2xl"></i>
-            </a>
+            </div>
             <label className="input">
               <input type="search" className="grow" placeholder="Search" />
             </label>

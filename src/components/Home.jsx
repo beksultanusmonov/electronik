@@ -95,9 +95,9 @@ function Home() {
           </div>
         )}
       </div>
-      <div class="bg-base-200 py-8 sm:py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="grid items-center gap-12 lg:grid-cols-2">
+      <div className="bg-base-200 py-8 sm:py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <img src="building1.jpg" />
             <div className="mb-6">
               <p className="text-gray-800 text-lg">
@@ -111,7 +111,7 @@ function Home() {
         {products.map((data) => {
           return (
             <Link to={'/products'}
-              key={data.title}
+              key={data.more}
               className="w-[300px] h-[400px] p-3 flex flex-col justify-evenly gap-3 text-center border-b shadow-md rounded tran group relative hover:cursor-pointer"
             >
               <img src={data.image} className="w-[70%] mx-auto z-30" />
@@ -128,33 +128,33 @@ function Home() {
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
               src="home1.jpg"
-              class="tran group-hover:scale-110 h-[300px] w-full object-cover"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
-          {/* <div class="card-body text-white">
-            <h5 class="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
           </div> */}
         </div>
         <div className="w-[500px] max-w-[94vw] group">
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
               src="home3.jpg"
-              class="tran group-hover:scale-110 h-[300px] w-full object-cover"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
-          {/* <div class="card-body text-white">
-            <h5 class="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
           </div> */}
         </div>
         <div className="w-[500px] max-w-[94vw] group">
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
               src="home2.jpg"
-              class="tran group-hover:scale-110 h-[300px] w-full object-cover"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
-          {/* <div class="card-body text-white">
-            <h5 class="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
           </div> */}
         </div>
       </div>

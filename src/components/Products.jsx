@@ -31,7 +31,7 @@ function Products() {
           {products.map((data) => {
             return (
               <div
-                key={data.titleKey}
+                key={data.size}
                 className="w-[420px] py-5 px-2 relative border border-blue-800 group z-10"
               >
                 <img
@@ -40,7 +40,7 @@ function Products() {
                 />
                 <div className="absolute w-[90%] shadow-md z-30 h-18 border-b-2 border-b-cyan-500 flex items-center">
                   <div className="w-[20%] bg-blue-900 h-full flex items-center justify-center">
-                    <i class="fa-solid fa-sheet-plastic text-white text-3xl"></i>
+                    <i className="fa-solid fa-sheet-plastic text-white text-3xl"></i>
                   </div>
                   <div className="w-[80%] h-full bg-white flex items-center pl-5 font-semibold text-xl">
                     <h2>{`${t(data.title)} ${data.more} ${data.size} ${t(data.titleKey)}, ${data.weight}g/m2`}</h2>

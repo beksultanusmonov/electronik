@@ -69,7 +69,7 @@ function About() {
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
           <span className="text-xl font-bold text-blue-500 block">01</span>
           <div className="w-full flex justify-center">
-            <i class="fa-solid fa-book block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
+            <i className="fa-solid fa-book block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
           <h1 className="text-center text-2xl my-4 mb-8 font-bold">
             {t('card_hongfa_intro')}
@@ -78,14 +78,14 @@ function About() {
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
           <span className="text-xl font-bold text-blue-500 block">02</span>
           <div className="w-full flex justify-center">
-            <i class="fa-solid fa-people-group block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
+            <i className="fa-solid fa-people-group block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
           <h1 className="text-center text-2xl my-4 mb-8 font-bold">{t('card_career')}</h1>
         </div>
         <div className="w-[400px] max-w-[96vw] bg-white py-3 px-4 border-b-2 shadow-xl border-blue-400 tran hover:bg-blue-800 hover:text-white group">
           <span className="text-xl font-bold text-blue-500 block">03</span>
           <div className="w-full flex justify-center">
-            <i class="fa-solid fa-handshake-angle block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
+            <i className="fa-solid fa-handshake-angle block my-2 text-9xl mx-auto tran text-blue-800 group-hover:text-white"></i>
           </div>
           <h1 className="text-center text-2xl my-4 mb-8 font-bold">
             {t('card_support')}
