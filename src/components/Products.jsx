@@ -2,17 +2,15 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const products = [
-  { titleKey: "products_power_relay", img: "product1.png" },
-  { titleKey: "products_auto_relay", img: "product2.png" },
-  { titleKey: "products_hv_dc_relay", img: "product3.png" },
-  { titleKey: "products_latching_relay", img: "product4.png" },
-  { titleKey: "products_signal_relay", img: "product5.png" },
-  { titleKey: "products_hf_relay", img: "product6.png" },
-  { titleKey: "products_reed_relay", img: "product7.png" },
-  { titleKey: "products_industrial_relay", img: "product8.png" },
-  { titleKey: "products_ssr", img: "product9.png" },
-  { titleKey: "products_relay_socket", img: "products10.png" },
-  { titleKey: "products_relay_module", img: "products11.png" },
+  { titleKey: "mm_metr", img: "detal.png", more: "ONIX(52164287 52164288)", size: "1700x700", weight: "1600", title: ""},
+  { titleKey: "mm_metr", img: "detal.png", more: "ONIX(26299502)", size: "1700x1250", weight: "1600"},
+  { titleKey: "mm_metr", img: "detal.png", more: "ONIX(51164561)", size: "1850x1250", weight: "1850"},
+  { titleKey: "mm_metr", img: "detal.png", more: "ONIX(26212432)", size: "780x720", weight: "1100"},
+  { titleKey: "mm_metr", img: "detal.png", more: "KIA SONET (84260-CC000WK)", size: "540x520", weight: "1000"},
+  { titleKey: "mm_metr", img: "detal.png", more: "KIA SONET (84260-CC000WK)", size: "400x270", weight: "1000"},
+  { titleKey: "mm_metr", img: "detal.png", more: "KIA SONET (84260-CC000WK)", size: "370x220", weight: "1000"},
+  { titleKey: "mm_metr", img: "detal.png", more: "KIA SONET (84260-CC000WK)", size: "270x100", weight: "1000"},
+  { titleKey: "mm_metr", img: "detal.png", more: "KIA SONET (84260-CC000WK)", size: "1700x1600", weight: "2000"},
 ];
 
 function Products() {
@@ -22,23 +20,12 @@ function Products() {
     <>
       <div className="w-full h-[40vh] relative">
         <img
-          src="https://switchesplus.com.au/image/dfuqgOyuk83qQs4AERUgAA/Schrack-relays.webp"
+          src="../home2.jpg"
           className="w-full h-full object-cover brightness-50 absolute top-0"
           alt=""
         />
       </div>
       <div className="flex py-18 gap-3 mx-auto flex-col max-w-[94vw] w-[900px]">
-        <img src="../product-banner.png" className="w-full" />
-        <div className="flex items-center gap-3">
-          <hr className="h-0.5 w-10 bg-gray-700"></hr>
-          <span className="font-semibold text-xl">
-            {t('products_category_overview')}
-          </span>
-        </div>
-        <h1 className="text-4xl font-bold">{t('product_relays')}</h1>
-        <p className="my-10">
-          {t('products_relays_desc')}
-        </p>
         <h1 className="text-2xl font-bold">{t('products_related_products')}</h1>
         <div className="w-full flex flex-wrap gap-x-10 gap-y-20 justify-center">
           {products.map((data) => {
@@ -49,14 +36,14 @@ function Products() {
               >
                 <img
                   src={data.img}
-                  className="tran hover:scale-120 z-20 max-h-[280px]"
+                  className="tran group-hover:scale-120 z-20 max-h-[280px] mx-auto"
                 />
                 <div className="absolute w-[90%] shadow-md z-30 h-18 border-b-2 border-b-cyan-500 flex items-center">
                   <div className="w-[20%] bg-blue-900 h-full flex items-center justify-center">
-                    <i class="fa-solid fa-car-battery text-white text-3xl"></i>
+                    <i class="fa-solid fa-sheet-plastic text-white text-3xl"></i>
                   </div>
                   <div className="w-[80%] h-full bg-white flex items-center pl-5 font-semibold text-xl">
-                    <h2>{t(data.titleKey)}</h2>
+                    <h2>{`${t(data.title)} ${data.more} ${data.size} ${t(data.titleKey)}, ${data.weight}g/m2`}</h2>
                   </div>
                 </div>
               </div>

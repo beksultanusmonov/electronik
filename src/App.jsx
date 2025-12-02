@@ -20,12 +20,6 @@ function App() {
           path: 'products/',
           element: <Products />
         }, {
-          path: 'news/',
-          element: <News />
-        }, {
-          path: 'services/',
-          element: <Services />
-        }, {
           path: 'about',
           element: <About />
         }, {

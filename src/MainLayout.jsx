@@ -77,16 +77,6 @@ function MainLayout() {
                 {t('nav_products')}
               </span>
             </Link>
-            <Link to={"/news"}>
-              <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
-                {t('nav_news')}
-              </span>
-            </Link>
-            <Link to={"/services"}>
-              <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
-                {t('nav_services')}
-              </span>
-            </Link>
             <Link to={"/about"}>
               <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
                 {t('nav_about')}
@@ -125,16 +115,6 @@ function MainLayout() {
                     <Link to={"/products"} className="border-b border-gray-600 h-10 pl-5">
                       <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
                         {t('nav_products')}
-                      </span>
-                    </Link>
-                    <Link to={"/news"} className="border-b border-gray-600 h-10 pl-5">
-                      <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
-                        {t('nav_news')}
-                      </span>
-                    </Link>
-                    <Link to={"/services"} className="border-b border-gray-600 h-10 pl-5">
-                      <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
-                        {t('nav_services')}
                       </span>
                     </Link>
                     <Link to={"/about"} className="border-b border-gray-600 h-10 pl-5">
