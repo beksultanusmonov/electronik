@@ -6,13 +6,6 @@ function About() {
 
   return (
     <section className="w-full bg-white">
-      <div className="w-full h-[40vh] relative mb-10">
-        <img
-          src="../home1.jpg"
-          className="w-full h-full object-cover brightness-50 absolute top-0"
-          alt=""
-        />
-      </div>
       <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8 py-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
           <div className="w-full lg:w-1/2">

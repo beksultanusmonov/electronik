@@ -34,31 +34,7 @@ function MainLayout() {
               href="#"
               className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
             >
-              <i className="fa-brands fa-facebook "></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
-            >
               <i className="fa-brands fa-telegram"></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
-            >
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
-            >
-              <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>
@@ -67,23 +43,23 @@ function MainLayout() {
       <nav className="h-24 sticky top-0 bg-base-100 z-100 transition-all duration-300">
         <div className="flex justify-center md:justify-between con_v h-full items-center">          
           {/* <img src="logo.png" /> */}
-          <h1 className="text-blue-700 font-bold text-2xl md:text-4xl">NEW MATERIALS DEVISION</h1>
+          <h1 className="text-blue-700 font-bold text-2xl md:text-4xl">NEW MATERIALS DIVISION</h1>
           <div className="hidden md:flex gap-3 h-full items-center">
             <Link to={"/"} className="h-20 w-20 flex justify-center items-center bg-blue-400">
               <i className="fa-solid fa-home text-3xl text-white"></i>
             </Link>
-            <Link to={"/products"}>
-              <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
+            <Link to={"/products"} className="hover:text-white transition-all duration-300 hover:bg-blue-400 h-14 px-2 flex items-center">
+              <span className="text-lg font-semibold ">
                 {t('nav_products')}
               </span>
             </Link>
-            <Link to={"/about"}>
-              <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
+            <Link to={"/about"} className="hover:text-white transition-all duration-300 hover:bg-blue-400 h-14 px-2 flex items-center">
+              <span className="text-lg font-semibold">
                 {t('nav_about')}
               </span>
             </Link>
-            <Link to={"/contact"}>
-              <span className="text-lg font-semibold transition-all duration-300 hover:text-blue-400">
+            <Link to={"/contact"} className="hover:text-white transition-all duration-300 hover:bg-blue-400 h-14 px-2 flex items-center">
+              <span className="text-lg font-semibold">
                 {t('nav_contact')}
               </span>
             </Link>

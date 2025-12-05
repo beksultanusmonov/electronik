@@ -6,11 +6,19 @@ import { Link } from "react-router-dom";
 const products = [
   { title: "product_felt", image: "detal.png", more: "ONIX(52164287)" },
   { title: "product_felt", image: "detal.png", more: "ONIX(52164288)" },
-  { title: "product_felt_layer", image: "detal.png", more: "ONIX(52164561)"},
-  { title: "product_felt_layer", image: "detal.png", more: "ONIX(26212432)"},
-  { title: "product_felt_layer", image: "detal.png", more: "KIA-SONET(84260)"},
+  { title: "product_felt_layer", image: "detal.png", more: "ONIX(52164561)" },
+  { title: "product_felt_layer", image: "detal.png", more: "ONIX(26212432)" },
+  { title: "product_felt_layer", image: "detal.png", more: "KIA-SONET(84260)" },
 ];
 
+const newspaper = [
+  {title: "newspaper1", intro: "newsintro1"},
+  {title: "newspaper2", intro: "newsintro2"},
+  {title: "newspaper3", intro: "newsintro3"},
+  {title: "newspaper4", intro: "newsintro4"},
+  {title: "newspaper5", intro: "newsintro5"},
+  {title: "newspaper6", intro: "newsintro6"},
+]
 
 function Home() {
   const { t } = useTranslation();
@@ -18,7 +26,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setSlide((prev) => (prev === 1 ? 2 : 1));
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -49,12 +57,12 @@ function Home() {
             <div className="w-[90vw] left-[5vw] flex flex-col gap-2 items-center justify-center top-0 h-full absolute text-center text-white">
               <Slide direction="up" triggerOnce={false} fraction={0}>
                 <h2 className="sm:text-xl md:text-2xl font-semibold">
-                  {t('home_welcome')}
+                  {t("home_welcome")}
                 </h2>
               </Slide>
               <Slide direction="down" triggerOnce={false} fraction={0}>
                 <h1 className="sm:text-4xl md:text-5xl font-bold">
-                  {t('home_slogan_1')}
+                  {t("home_slogan_1")}
                 </h1>
               </Slide>
             </div>
@@ -83,12 +91,12 @@ function Home() {
             <div className="w-[90vw] left-[5vw] flex flex-col gap-2 items-center justify-center top-0 h-full absolute text-center text-white">
               <Slide direction="up" triggerOnce={false} fraction={0}>
                 <h2 className="sm:text-xl md:text-2xl font-semibold">
-                  {t('home_welcome')}
+                  {t("home_welcome_2")}
                 </h2>
               </Slide>
               <Slide direction="right" triggerOnce={false} fraction={0}>
                 <h1 className="sm:text-4xl md:text-5xl font-bold">
-                  {t('home_slogan_2')}
+                  {t("home_slogan_2")}
                 </h1>
               </Slide>
             </div>
@@ -98,11 +106,26 @@ function Home() {
       <div className="bg-base-200 py-8 sm:py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <img src="building1.jpg" />
+            <img src="kigiz.png" />
             <div className="mb-6">
               <p className="text-gray-800 text-lg">
-                {t('home_description')}
+                {t('home_data')}
               </p>
+              <ul class="grid mx-auto text-heading sm:grid-cols-2">
+                {newspaper.length > 0 && 
+                newspaper.map((data, i) => {
+                  return <li key={i}>
+                  <div
+                    class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+                  >
+                    <div class="font-semibold flex gap-2"><span className="w-8 h-8 bg-gray-300 rounded-md flex justify-center items-centert">{i+1}</span> {t(data.title)}</div>
+                    <span class="text-sm text-body">
+                      {t(data.intro)}
+                    </span>
+                  </div>
+                </li>
+                })}
+              </ul>                  
             </div>
           </div>
         </div>
@@ -110,13 +133,17 @@ function Home() {
       <div className="flex flex-wrap justify-center gap-8 md:gap-30 my-5">
         {products.map((data) => {
           return (
-            <Link to={'/products'}
+            <Link
+              to={"/products"}
               key={data.more}
               className="w-[300px] h-[400px] p-3 flex flex-col justify-evenly gap-3 text-center border-b shadow-md rounded tran group relative hover:cursor-pointer"
             >
-              <img src={data.image} className="w-[70%] mx-auto z-30" />
+              <img
+                src={data.image}
+                className="w-[70%] mx-auto z-30 group-hover:scale-120 tran"
+              />
               <h2 className="text-xl font-bold group-hover:text-white z-30">
-                {t(data.title) + ' ' + data.more} 
+                {t(data.title) + " " + data.more}
               </h2>
               <div className="absolute w-0 group-hover:w-full h-full z-10 right-[50%] group-hover:right-0 transition-all duration-700 bg-blue-700"></div>
             </Link>
@@ -127,7 +154,7 @@ function Home() {
         <div className="w-[500px] max-w-[94vw] group">
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
-              src="home1.jpg"
+              src="uskuna.png"
               className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
@@ -138,7 +165,7 @@ function Home() {
         <div className="w-[500px] max-w-[94vw] group">
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
-              src="home3.jpg"
+              src="uskuna2.png"
               className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
@@ -149,7 +176,40 @@ function Home() {
         <div className="w-[500px] max-w-[94vw] group">
           <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
             <img
-              src="home2.jpg"
+              src="uskuna3.png"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
+            />
+          </figure>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          </div> */}
+        </div>
+        <div className="w-[500px] max-w-[94vw] group">
+          <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
+            <img
+              src="uskuna4.png"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
+            />
+          </figure>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          </div> */}
+        </div>
+        <div className="w-[500px] max-w-[94vw] group">
+          <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
+            <img
+              src="uskuna5.png"
+              className="tran group-hover:scale-110 h-[300px] w-full object-cover"
+            />
+          </figure>
+          {/* <div className="card-body text-white">
+            <h5 className="card-title mb-2.5 text-2xl">{t('app_household')}</h5>
+          </div> */}
+        </div>
+        <div className="w-[500px] max-w-[94vw] group">
+          <figure className="w-[450px] max-w-[90vw] mx-auto overflow-hidden">
+            <img
+              src="uskuna6.png"
               className="tran group-hover:scale-110 h-[300px] w-full object-cover"
             />
           </figure>
