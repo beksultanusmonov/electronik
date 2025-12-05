@@ -33,7 +33,7 @@ function About() {
       </div>
       <div className="flex my-18 flex-wrap justify-center gap-18">
         <div className="w-[400px] max-w-[94vw] flex-col sm:flex-row flex items-center min-h-[250px] sm:border-r-2 border-gray-400">
-          <img src="about1.png" className="w-[200px]" />
+          <img src="about4.png" className="w-[200px]" />
           <div>
             <h1 className="font-bold text-4xl sm:text-4xl">6575.95m<sup>2</sup></h1>
             <p className="font-semibold text-xl">
