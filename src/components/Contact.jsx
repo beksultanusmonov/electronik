@@ -19,10 +19,10 @@ function Contact() {
             <i className="fa-solid fa-phone"></i>
             <span>+99897 998 00 10</span>
           </div>
-          <div className="mt-1">
+          <a href="https://t.me/iminov_x" className="mt-1">
             <i className="fa-brands fa-telegram"></i>
-            <span>+99897 998 00 10 </span>
-          </div>
+            <span>Telegram orqali bog'lanish</span>
+          </a>
           <div className="flex justify-end my-3">
             <div className="w-10 h-10 bg-blue-700 rounded flex justify-center items-center text-white">
               <i className="fa-solid fa-location-dot"></i>

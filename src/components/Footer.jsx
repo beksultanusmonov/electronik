@@ -10,7 +10,7 @@ export default function Footer() {
         <p>{t('footer_copyright')}</p>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a
-            href="#"
+            href="https://t.me/iminov_x"
             className="w-8 h-8 bg-blue-600 flex items-center justify-center rounded-full"
           >
             <i className="fa-brands fa-telegram"></i>

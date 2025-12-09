@@ -31,7 +31,7 @@ function MainLayout() {
           </select>
           <div className="flex gap-3">
             <a
-              href="#"
+              href="https://t.me/iminov_x"
               className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 hover:bg-blue-400 hover:text-white"
             >
               <i className="fa-brands fa-telegram"></i>
@@ -103,38 +103,12 @@ function MainLayout() {
                       </span>
                     </Link>
                   </nav>
-                  <div className="flex gap-3 mt-10 justify-center">
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 text-black"
-                    >
-                      <i className="fa-brands fa-facebook"></i>
-                    </a>
-                    <a
-                      href="#"
+                  <div className="flex gap-3 mt-10 justify-center"><a
+                      href="https://t.me/iminov_x"
                       className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 text-black"
                     >
                       <i className="fa-brands fa-telegram"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 text-black"
-                    >
-                      <i className="fa-brands fa-instagram"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 text-black"
-                    >
-                      <i className="fa-brands fa-twitter"></i>
-                    </a>
-                    <a
-                      href="#"
-                      className="w-8 h-8 rounded-full bg-white flex items-center justify-center transition duration-300 text-black"
-                    >
-                      <i className="fa-brands fa-youtube"></i>
-                    </a>
-                  </div>
+                    </a></div>
                   <select 
                     onChange={changeLanguage} 
                     value={currentLang} 
