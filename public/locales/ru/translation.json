@@ -82,5 +82,11 @@
   "services_technical_title": "Техническое обслуживание",
   "services_technical_desc": "Профессиональные и эффективные технические консультации по продуктовым решениям",
   "services_complaints_title": "Жалобы и предложения",
-  "services_complaints_desc": "Быстрый ответ и эффективный процесс"
+  "services_complaints_desc": "Быстрый ответ и эффективный процесс",
+  "product_down": "Нижняя часть",
+"product_middle": "Средняя часть",
+"product_front": "Передняя часть",
+"product_door": "Дверная часть",
+"product_special_down": "Специальная нижняя часть",
+"product_special_front": "Специальная передняя часть"
   }

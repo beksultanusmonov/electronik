@@ -17,7 +17,7 @@ function Contact() {
           </div> */}
           <div className="mt-8">
             <i className="fa-solid fa-phone"></i>
-            <span>+99897 998 00 10</span>
+            <span>+9989 90 060 06 63</span>
           </div>
           <a href="https://t.me/iminov_x" className="mt-1">
             <i className="fa-brands fa-telegram"></i>
