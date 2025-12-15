@@ -51,7 +51,7 @@ function About() {
         <div className="w-[400px] max-w-[94vw] flex-col sm:flex-row flex items-center min-h-[250px]">
           <img src="about3.png" className="w-[200px]" />
           <div>
-            <h1 className="font-bold text-4xl sm:text-7xl">25</h1>
+            <h1 className="font-bold text-4xl sm:text-7xl">28</h1>
             <p className="font-semibold text-xl">
               {t('stat_lines')}
             </p>

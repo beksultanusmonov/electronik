@@ -23,6 +23,10 @@ function Contact() {
             <i className="fa-brands fa-telegram"></i>
             <span>Telegram orqali bog'lanish</span>
           </a>
+          <div className="mt-1">
+            <i className="fa-brands fa-whatsapp"></i>
+            <span>+998 97 998 00 10</span>
+          </div>
           <div className="flex justify-end my-3">
             <div className="w-10 h-10 bg-blue-700 rounded flex justify-center items-center text-white">
               <i className="fa-solid fa-location-dot"></i>

@@ -3,15 +3,6 @@ import { Slide } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const products = [
-  { title: "product_felt", image: "product1.jpg", more: "product_down"},
-  { title: "product_felt", image: "product2.jpg", more: "product_middle"},
-  { title: "product_felt", image: "product3.jpg", more: "product_front"},
-  { title: "product_felt", image: "product4.jpg", more: "product_door"},
-  { title: "product_felt", image: "product5.jpg", more: "product_special_down"},
-  { title: "product_felt", image: "product6.jpg", more: "product_special_front"},
-];
-
 const newspaper = [
   {title: "newspaper1", intro: "newsintro1"},
   {title: "newspaper2", intro: "newsintro2"},
@@ -130,25 +121,6 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-wrap justify-center gap-8 md:gap-30 my-5">
-        {products.map((data, i) => {
-          return (
-            <div
-              key={i}
-              className="w-[300px] h-[400px] p-3 flex flex-col justify-evenly gap-3 text-center border-b shadow-md rounded tran group relative hover:cursor-pointer"
-            >
-              <img
-                src={data.image}
-                className="w-full mx-auto z-30 group-hover:scale-110 tran"
-              />
-              <h2 className="text-xl font-bold group-hover:text-white z-30">
-                {t(data.title)} <br /> {t(data.more)}
-              </h2>
-              <div className="absolute w-0 group-hover:w-full h-full z-10 right-[50%] group-hover:right-0 transition-all duration-700 bg-blue-700"></div>
-            </div>
-          );
-        })}
       </div>
       <div className="w-full bg-blue-800 my-6 py-18 flex flex-wrap justify-center gap-8 lg:gap-26">
         <div className="w-[500px] max-w-[94vw] group">
