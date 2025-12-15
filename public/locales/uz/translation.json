@@ -84,10 +84,10 @@
   "footer_compliance": "Muvofiqlik", 
   "footer_solutions": "Yechimlar", 
   "footer_standards": "Standartlar",
-  "product_down": "Pastki qism",
-  "product_middle": "O'rta qism",
-  "product_front": "Oldi qism",
-  "product_door": "Eshik qism",
-  "product_special_down": "Maxsus pastki qism",
-  "product_special_front": "Maxsus oldi qism"
+  "product_down": "Avtotransport pastki qism",
+  "product_middle": "Avtotransport o'rta qism",
+  "product_front": "Avtotransport oldi qism",
+  "product_door": "Avtotransport eshik qism",
+  "product_special_down": "Maxsus avtotransport pastki qism",
+  "product_special_front": "Maxsus avtotransport oldi qism"
   }

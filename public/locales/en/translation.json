@@ -83,10 +83,10 @@
   "services_technical_desc": "Professional and efficient technical advice on product solutions",
   "services_complaints_title": "Complaints and Suggestions",
   "services_complaints_desc": "Fast response and efficient process",
-  "product_down": "Bottom part",
-  "product_middle": "Middle part",
-  "product_front": "Front part",
-  "product_door": "Door part",
-  "product_special_down": "Special bottom part",
-  "product_special_front": "Special front part"
+  "product_down": "Bottom part of car",
+  "product_middle": "Middle part of car",
+  "product_front": "Front part of car",
+  "product_door": "Door part of car",
+  "product_special_down": "Special bottom part of car",
+  "product_special_front": "Special front part of car"
   }
