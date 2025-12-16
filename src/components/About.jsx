@@ -7,7 +7,7 @@ function About() {
   return (
     <section className="w-full bg-white">
       <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
           <div className="w-full lg:w-1/2">
             <div className="relative overflow-hidden rounded-md">
               <img
@@ -26,6 +26,11 @@ function About() {
             <div className="space-y-2 mt-6">
               <p className="text-gray-800 md:text-4xl font-medium">
                 {t('home_description')}
+              </p>
+              <p className="text-gray-800 md:text-3xl font-medium">
+               {t("home_slogan_1")}
+              </p>
+              <p className="text-gray-800 md:text-3xl font-medium">{t("home_slogan_2")}
               </p>
             </div>
           </div>
