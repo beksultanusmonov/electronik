@@ -24,13 +24,13 @@ function About() {
             </h2>
 
             <div className="space-y-2 mt-6">
-              <p className="text-gray-800 md:text-4xl font-medium">
+              <p className="text-gray-800 md:text-xl my-9 font-medium">
                 {t('home_description')}
               </p>
-              <p className="text-gray-800 md:text-3xl font-medium">
+              <p className="text-gray-800 md:text-xl my-9 font-medium">
                {t("home_slogan_1")}
               </p>
-              <p className="text-gray-800 md:text-3xl font-medium">{t("home_slogan_2")}
+              <p className="text-gray-800 md:text-xl my-9 font-medium">{t("home_slogan_2")}
               </p>
             </div>
           </div>

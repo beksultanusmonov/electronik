@@ -103,15 +103,15 @@ function Home() {
               <p className="text-gray-800 text-lg">
                 {t('home_data')}
               </p>
-              <ul class="grid mx-auto text-heading sm:grid-cols-2">
+              <ul className="grid mx-auto text-heading sm:grid-cols-2">
                 {newspaper.length > 0 && 
                 newspaper.map((data, i) => {
                   return <li key={i}>
                   <div
-                    class="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
+                    className="block p-3 rounded-lg hover:bg-neutral-secondary-medium"
                   >
-                    <div class="font-semibold flex gap-2"><span className="w-8 h-8 bg-gray-300 rounded-md flex justify-center items-centert">{i+1}</span> {t(data.title)}</div>
-                    <span class="text-sm text-body">
+                    <div className="font-semibold flex gap-2"><span className="w-8 h-8 bg-gray-300 rounded-md flex justify-center items-centert">{i+1}</span> {t(data.title)}</div>
+                    <span className="text-sm text-body">
                       {t(data.intro)}
                     </span>
                   </div>
