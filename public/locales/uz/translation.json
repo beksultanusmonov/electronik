@@ -84,10 +84,10 @@
   "footer_compliance": "Muvofiqlik", 
   "footer_solutions": "Yechimlar", 
   "footer_standards": "Standartlar",
-  "product_down": "Avtomobilning pastki qism",
-  "product_middle": "Avtomobilning o'rta qism",
-  "product_front": "Avtomobilning oldi qism",
-  "product_door": "Avtomobilning eshik qism",
-  "product_special_down": "Maxsus avtomobilning pastki qism",
-  "product_special_front": "Maxsus avtomobilning oldi qism"
+  "product_down": "Avtomobilning pastki qism uchun",
+  "product_middle": "Avtomobilning o'rta qism uchun",
+  "product_front": "Avtomobilning oldi qism uchun",
+  "product_door": "Avtomobilning eshik qism uchun",
+  "product_special_down": "Maxsus avtomobilning pastki qism uchun",
+  "product_special_front": "Maxsus avtomobilning oldi qism uchun"
   }
