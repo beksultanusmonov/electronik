@@ -36,6 +36,7 @@ function Products() {
           );
         })}
       </div>
+      <h1 className="text-xl font-bold uppercase">{t('product_bottom')}</h1>
       </div>
     </>
   );
